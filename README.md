@@ -58,4 +58,4 @@ bin<->hex 	super+B,  super+B
 >0xF
 
 ---  
-Forked from [ALLZ/hex-bin_system](ttps://github.com/ALLZ/hex-bin_system).
+Forked from [ALLZ/hex-bin_system](https://github.com/ALLZ/hex-bin_system).
