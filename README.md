@@ -4,7 +4,7 @@ Sublime Text plugin to change numeral system of selected number. Works with ST2 
 
 ## Usage ##
 
-Select number, then use key bindings, "selections" menu or context menu to convert it.
+Select number, then use key bindings, "selections" menu or context menu to convert it.  
 选择文本(可以包含"0x"或"0b"前缀，但不要包含换行符。)，使用快捷键、菜单栏或右键菜单来转换。
 
 ## Key bindings ##
@@ -31,11 +31,11 @@ bin<->hex 	super+B,  super+B
 
 ## Update ##
 
-* The selections can contains "0x", "0X", "0B", "0b" prefix now, but can't contain a newline character "\n".
+* The selections can contains "0x", "0X", "0B", "0b" prefix now, but can't contain a newline character "\n".  
 >选择的文本可以包含"0x", "0X", "0B", "0b"前缀，但不能包含换行符。
-* The hex or bin generated now contains "0x" and "0b" prefix now.
+* The hex or bin generated now contains "0x" and "0b" prefix now.  
 >转换的hex和bin分别添加"0x"和"0b"前缀以示区分。
-* Add the bin<->hex function, then press ctrl+B twice, hex will be converted to bin and bin converted to hex.
+* Add the bin<->hex function, then press ctrl+B twice, hex will be converted to bin and bin converted to hex.  
 >添加bin<-->hex互转功能，然后按ctrl+B两次，即可进行hex和bin的互转。
 
 ##Example##
