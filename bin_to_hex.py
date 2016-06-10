@@ -10,7 +10,9 @@ class BinToHexCommand(sublime_plugin.TextCommand):
         reglist = list(v.sel())
         for j in range(0, len(reglist)):
             bin = v.substr(v.sel()[j])
-            bin = bin.strip()
+            # print(bin.lstrip("0b"))
+            bin = bin.lstrip("0b").strip().replace(' ','')
+            # print(bin)
             l = True
             if bin == '':
                 l = False
@@ -18,7 +20,7 @@ class BinToHexCommand(sublime_plugin.TextCommand):
                 if not((i == '1') or (i == '0')):
                     l = False
             if l:
-                v.replace(edit, v.sel()[j], '{0:X}'.format(int(bin, 2)))
+                v.replace(edit, v.sel()[j], '0x{0:X}'.format(int(bin, 2)))
             else:
                 if len(bin) > self.MAX_STR_LEN:
                     logMsg = bin[0:self.MAX_STR_LEN] + "..."

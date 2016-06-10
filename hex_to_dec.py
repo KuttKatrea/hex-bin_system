@@ -10,7 +10,7 @@ class HexToDecCommand(sublime_plugin.TextCommand):
         reglist = list(v.sel())
         for j in range(0, len(reglist)):
             hx = v.substr(v.sel()[j])
-            hx = hx.strip()
+            hx = hx.strip("0x").strip()
             hexdig = '0123456789abcdefABCDEF'
             l = True
             if hx == '':

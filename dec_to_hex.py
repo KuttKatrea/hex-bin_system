@@ -12,7 +12,7 @@ class DecToHexCommand(sublime_plugin.TextCommand):
             dec = v.substr(v.sel()[i])
             dec = dec.strip()
             if dec.isdigit():
-                v.replace(edit, v.sel()[i], '{0:X}'.format(int(dec)))
+                v.replace(edit, v.sel()[i], '0x{0:X}'.format(int(dec)))
             else:
                 if len(dec) > self.MAX_STR_LEN:
                     logMsg = dec[0:self.MAX_STR_LEN] + "..."

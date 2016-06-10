@@ -10,7 +10,7 @@ class BinToDecCommand(sublime_plugin.TextCommand):
         reglist = list(v.sel())
         for j in range(0, len(reglist)):
             bin = v.substr(v.sel()[j])
-            bin = bin.strip()
+            bin = bin.lstrip("0b").strip().replace(' ','')
             l = True
             if bin == '':
                 l = False

@@ -10,7 +10,7 @@ class HexToBinCommand(sublime_plugin.TextCommand):
         reglist = list(v.sel())
         for j in range(0, len(reglist)):
             hx = v.substr(v.sel()[j])
-            hx = hx.strip()
+            hx = hx.lstrip("0x").strip()
             hexdig = '0123456789abcdefABCDEF'
             l = True
             if hx == '':
@@ -20,7 +20,7 @@ class HexToBinCommand(sublime_plugin.TextCommand):
                     l = False
 
             if l:
-                v.replace(edit, v.sel()[j], '{0:b}'.format(int(hx, 16)))
+                v.replace(edit, v.sel()[j], '0b{0:0>8b}'.format(int(hx, 16)))
             else:
                 if len(hx) > self.MAX_STR_LEN:
                     logMsg = hx[0:self.MAX_STR_LEN] + "..."

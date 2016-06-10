@@ -1,4 +1,5 @@
 [
+  {"command": "hex_bin_swapper" },
   {"command": "dec_to_hex"},
   {"command": "dec_to_bin"},
   {"command": "bin_to_dec"},
