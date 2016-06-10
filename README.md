@@ -32,10 +32,15 @@ bin<->hex 	super+B,  super+B
 ## Update ##
 
 * The selections can contains "0x", "0X", "0B", "0b" prefix now, but can't contain a newline character "\n".  
+
 >选择的文本可以包含"0x", "0X", "0B", "0b"前缀，但不能包含换行符。
+
 * The hex or bin generated now contains "0x" and "0b" prefix now.  
+
 >转换的hex和bin分别添加"0x"和"0b"前缀以示区分。
+
 * Add the bin<->hex function, then press ctrl+B twice, hex will be converted to bin and bin converted to hex.  
+
 >添加bin<-->hex互转功能，然后按ctrl+B两次，即可进行hex和bin的互转。
 
 ##Example##
