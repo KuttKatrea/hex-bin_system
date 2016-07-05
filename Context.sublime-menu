@@ -1,9 +1,15 @@
 [
-  {"command": "hex_bin_swapper" },
-  {"command": "dec_to_hex"},
-  {"command": "dec_to_bin"},
-  {"command": "bin_to_dec"},
-  {"command": "bin_to_hex"},
-  {"command": "hex_to_dec"},
-  {"command": "hex_to_bin"}
+	{
+        "caption": "进制转换",
+        "children":
+		[
+			 {"command": "hex_bin_swapper" },
+			 {"command": "dec_to_hex"},
+			 {"command": "dec_to_bin"},
+			 {"command": "bin_to_dec"},
+			 {"command": "bin_to_hex"},
+			 {"command": "hex_to_dec"},
+			 {"command": "hex_to_bin"}
+		]
+  	}
 ]
